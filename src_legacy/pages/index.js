@@ -1,3 +1,4 @@
+import * as React from "react"
 import Slider from "react-slick"
 import Wave from "react-wavify"
 import "slick-carousel/slick/slick-theme.css"
@@ -22,23 +23,22 @@ import Blog from "../components/pages/home-page/blog"
 import Activity from "../components/pages/home-page/activity"
 import Cta from "../components/pages/home-page/cta"
 import Progress from "../components/pages/home-page/progress"
-import { GatsbyImage } from "gatsby-plugin-image"
 
 const posts = [
   {
     author: 'Arisan Security',
     title: 'AWS S3 Bucket Exposure',
-    cover: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjG4C_q71uXP3Fi0luwaTS9mGDbCCmljkPTKft8HdqLi5xLhAeG9L70qreUKN2SmhxKOt2k0FuDpI4Ctb0TgAPZdfIGTCxdBzy0190B0tuO4oo5Kb-_PzC1Al2ABXWT1FMi7laVN8eebVfxkNl6RM0AgeIU2cdEfuELEvk-9RzLUmBf6KLIQ74Nkea-Ww/s582/15.png',
+    cover: 'https://arisansecurity.id/wp-content/uploads/2020/12/aws-logo-amazon-web-services-ico-11562880403an9a3aaryc-300x127.png',
   },
   {
     author: 'Arisan Networking',
-    title: 'Macam Threat Actor dalam Keamanan Siber',
-    cover: 'https://lh4.googleusercontent.com/bbk2r9TSjTGu9WvpM2b6UJ9EcoClCrAlMwPhpl__Uf576ICKyz_ue_AEe6yPw_xmEipcYENKm9O-eTzzKBBFUXoobGc9Em2i2Juxw3dhGGT6ZxfUpv9Mhj3oT64U6yWh1kQQspkNz4uPlLFlVQspwhM',
+    title: 'Channel Wifi Terbaik Pada Frekuensi 2.4 Ghz',
+    cover: 'https://arisansecurity.id/wp-content/uploads/2020/12/png-clipart-computer-application-icons-illustration-internet-icon-computer-network-angle-768x768.png',
   },
   {
     author: 'Arisan Security',
-    title: 'Pentingnya Kesadaran Keamanan Siber untuk Kesiapan Pertahanan Nasiona',
-    cover: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvu-p5J44j-_VhuZcrcT5CajP7nMRtUUHIwipPujqeoeIbcXnDMSSf7TXh07PNP3u3fh2wOGLKjTIlJkETuox4gxu0N3ZE5ZWK0p6vAr0tXefYM2sbQSPq9eoNapMOEuX3Ny666XRftw2ZduCoXvwP4P7dtHHHkdq1NO-IZelBevvxF_ZmxNj6HsP6_g/w640-h360/map-indonesia-gold-glitter-map-dark-background.jpg',
+    title: 'Pengalaman Sebagai Penetration Tester di PT. Datacomm Diangraha',
+    cover: 'https://arisansecurity.id/wp-content/uploads/2020/12/logo-datacomm-300x57.png',
   },
 ];
 
@@ -107,7 +107,7 @@ const IndexPage = () => {
         <Collaborator settings={collabSlideSettings} collaborators={collaborators}/>
         <Shortcut />
         <Progress />
-        {/* <Projects /> */}
+        <Projects />
         <Blog posts={posts}/>
         <Activity />
         <Cta />
