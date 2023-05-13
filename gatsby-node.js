@@ -8,16 +8,16 @@
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
 
-const posts = require('./src/data/posts.json')
-exports.createPages = async ({ actions }) => {
-  const { createPage, createNode } = actions
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
-}
+// const posts = require('./src/data/posts.json')
+// exports.createPages = async ({ actions }) => {
+//   const { createPage, createNode } = actions
+//   createPage({
+//     path: "/using-dsg",
+//     component: require.resolve("./src/templates/using-dsg.js"),
+//     context: {},
+//     defer: true,
+//   })
+// }
 
 // exports.sourceNodes = ({ actions }) => {
 //   const { createNode } = actions
