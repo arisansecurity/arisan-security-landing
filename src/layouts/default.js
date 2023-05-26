@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import Footer from "../components/footer";
 import Header from "../components/header";
-// import SEO from "../components/seo";
+import SEO from "../components/seo";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 const DefaultLayout = (props) => {
@@ -11,9 +11,9 @@ const DefaultLayout = (props) => {
     }, [])
     return (
         <>
-            {/* <SEO {...props}/> */}
+            <SEO {...props}/>
             <main className="">
-                <Header path="beranda" />
+                <Header path={props.path} />
                     <span className="">
                         {props.children}
                     </span>

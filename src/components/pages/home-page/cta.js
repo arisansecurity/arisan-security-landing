@@ -17,7 +17,7 @@ export default function Cta() {
                             <p>Kirimkan tulisan kamu sekarang juga dengan menekan tombol “KIRIM TULISAN” di samping.</p>
                         </div>
                     </div>
-                    <div className="flex" style={{ backgroundImage: "url('/static/tulis-bg.png')", backgroundSize: 'contain' }}>
+                    <div className="flex" style={{ backgroundImage: "url('/images/tulis-bg.png')", backgroundSize: 'contain' }}>
                         <a href="http://blog.arisansecurity.id" target="_blank">
                             <Button className="px-20 rounded-sm">Kirim Tulisan</Button>
                         </a>

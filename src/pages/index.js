@@ -102,7 +102,7 @@ const collaborators = [
 const IndexPage = () => {
   return (
     <>
-      <DefaultLayout>
+      <DefaultLayout title={"Beranda "} path={"beranda"}>
         <Hero />
         <Collaborator settings={collabSlideSettings} collaborators={collaborators}/>
         <Shortcut />

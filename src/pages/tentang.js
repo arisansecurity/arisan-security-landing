@@ -19,6 +19,7 @@ import {
   FaRandom,
   FaTwitter,
 } from "react-icons/fa";
+import DefaultLayout from "../layouts/default";
 
 const TentangPage = () => {
   const slider = (
@@ -170,15 +171,14 @@ const TentangPage = () => {
   }, []);
 
   return (
-    <main>
-      <Header path="tentang" />
+    <DefaultLayout title={"Tentang"}  path={"tentang"}>
       <section
         className="min-h-screen grid grid-cols-1 md:grid-cols-2 align-baseline"
         style={{ backgroundColor: "rgba(243,243,243, 1)" }}
       >
         <div className="w-full flex flex-row px-10 xl:px-0 justify-end items-center grid-flow-col">
           <div className="block max-w-xl">
-            <h1 className="font-semibold text-4xl">Siapa Kami?</h1>
+            <h2 className="font-semibold text-2xl">Siapa Kami?</h2>
             <br />
             <p className="text-2xl leading-normal text-gray-600">
               Kami adalah komunitas nirlaba yang berorientasi pada peradaban
@@ -206,7 +206,7 @@ const TentangPage = () => {
       </section>
 
       <section className="py-24 px-8 flex flex-col justify-center items-center">
-        <h1 className="text-4xl font-black mb-16">Kalimat Mutiara</h1>
+        <h2 className="text-2xl font-black mb-16">Kalimat Mutiara</h2>
         <div className="w-full xl:w-1/2">
           <div className="panel-quote">
             <div className="quote-progress"></div>
@@ -241,7 +241,7 @@ const TentangPage = () => {
       </section>
 
       <section className="py-24 px-0 md:px-24 flex flex-col justify-center items-center">
-        <h1 className="text-4xl font-black mb-16">Napak Tilas</h1>
+        <h2 className="text-2xl font-black mb-16">Napak Tilas</h2>
         <div className="flex flex-col xl:flex-row">
           <div className="w-full xl:w-1/2 flex justify-center items-center bg-black">
             <img src={napak1}/>
@@ -292,7 +292,7 @@ const TentangPage = () => {
       </section>
 
       <section className="py-24 px-4 xl:px-4 flex flex-col w-full justify-center items-center gap-4">
-        <h1 className="text-4xl font-black mb-16">Kenali Program Kami</h1>
+        <h2 className="text-2xl font-black mb-16">Kenali Program Kami</h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4">
           <div className="w-full md:w-1/3" style={{backgroundColor: '#8fe38a'}}>
             <div className="svg-shape-top">
@@ -310,7 +310,7 @@ const TentangPage = () => {
             </div>
             <div className="p-14 xl:p-6">
               <div className="w-full flex justify-center image-wrapper"><img src={Bertumbuh}/></div>
-              <h1 className="text-center text-white font-bold my-8">BERtumbuh</h1>
+              <h2 className="text-center text-white font-bold my-8">BERtumbuh</h2>
               <p className="text-center text-white font-normal my-8">Saling belajar bersama dalam pengembangan pengetahuan setiap anggota komunitas agar semakin dewasa dalam berpikir komprehensif serta menjadi pribadi yang kompeten di dalam bidang IT terkhususnya IT Security.</p>
             </div>
             <div className="svg-shape-bottom">
@@ -343,7 +343,7 @@ const TentangPage = () => {
             </div>
             <div className="p-14 xl:p-6">
               <div className="w-full flex justify-center image-wrapper"><img src={Bergerak}/></div>
-              <h1 className="text-center text-white font-bold my-8">BERgerak</h1>
+              <h2 className="text-center text-white font-bold my-8">BERgerak</h2>
               <p className="text-center text-white font-normal my-8">Memacu kreativitas dan implementasi anggota komunitas dari hasil pertukaran informasi lini digital di bidang IT terkhususnya IT Security, agar terlihat jelas bukti konkret pengaplikasian teori yang didapatkan.</p>
             </div>
             <div className="svg-shape-bottom">
@@ -376,7 +376,7 @@ const TentangPage = () => {
             </div>
             <div className="p-14 xl:p-6">
               <div className="w-full flex justify-center image-wrapper"><img src={Berdampak}/></div>
-              <h1 className="text-center text-white font-bold my-8">BERdampak</h1>
+              <h2 className="text-center text-white font-bold my-8">BERdampak</h2>
               <p className="text-center text-white font-normal my-8">Membuahkan dampak positif dari setiap hasil implementasi pergerakan yang dilakukan serta memastikan selalu dapat bermanfaat bagi sesama anggota komunitas, para IT Enthusiast, bahkan sampai ke masyarakat.</p>
             </div>
             <div className="svg-shape-bottom">
@@ -397,21 +397,21 @@ const TentangPage = () => {
       </section>
 
       <section className="p-4 md:p-20 flex flex-col justify-center items-center" style={{backgroundColor: '#f0f0f0'}}>
-        <h1 className="text-3xl md:text-4xl font-black text-center">Budaya & Nilai Yang Kami Percaya</h1>
+        <h2 className="text-3xl md:text-2xl font-black text-center">Budaya & Nilai Yang Kami Percaya</h2>
         <div className="max-w-full md:max-w-5xl">
           <img width={1920} height={1080} src={hatiBeriman} />
         </div>
       </section>
 
       <section className="p-4 md:p-20 flex flex-col justify-center items-center text-center">
-        <h1 className="text-4xl font-black mb-10">Belajar Dari Berkomunitas</h1>
+        <h2 className="text-2xl font-black mb-10">Belajar Dari Berkomunitas</h2>
         <p>Mari bergabung bersama kami serta berpartisipasi dalam projek sukarelawan rutin kami demi; Membangun, Memajukan, serta Mencerdaskan bangsa ini di bidang Information Technology, khususnya IT Security.</p>
         <div className="flex flex-col xl:flex-row justify-between gap-16 mt-10">
           <div className="flex flex-col justify-center gap-10">
             <div className="flex flex-row gap-4">
               <img className="w-20 h-20 md:w-32 md:h-32" src={jadwalIcon} width={128} height={128}/>
               <div className="flex flex-col items-start text-left">
-                <h2 className="text-2xl font-bold">Jadwal Pertemuan</h2>
+                <h2 className="text-xl font-bold">Jadwal Pertemuan</h2>
                 <p>Setiap hari Jumat, di minggu ke-4</p>
                 <p>Pukul: 19:30 WIB - SELESAI</p>
               </div>
@@ -419,7 +419,7 @@ const TentangPage = () => {
             <div className="flex flex-row gap-4">
               <img className="w-20 h-20 md:w-32 md:h-32" src={mapIcon} width={128} height={128}/>
               <div className="flex flex-col items-start text-left">
-                <h2 className="text-2xl font-bold">Alamat</h2>
+                <h2 className="text-xl font-bold">Alamat</h2>
                 <p>Jl. Kemiri II, Salatiga, Jawa Tengah, 50711</p>
                 <p>Phone: <a href="https://wa.me/6281311113723" style={{color: '#E46C5C'}}>(+62)813-1111-3723</a></p>
                 <p>Email: <a href="mailto:hai@arisansecurity.id" style={{color: '#E46C5C'}}>hai@arisansecurity.id</a></p>
@@ -437,8 +437,7 @@ const TentangPage = () => {
         </div>
         </div>
       </section>
-      <Footer />
-    </main>
+    </DefaultLayout>
   );
 };
 
