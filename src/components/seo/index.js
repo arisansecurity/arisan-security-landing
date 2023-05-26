@@ -30,6 +30,7 @@ const SEO = ({ title, description, image, article }) => {
       {seo.description && (
         <meta property="og:description" content={seo.description} />
       )}
+      <link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
       {seo.image && <meta property="og:image" content={seo.image} />}
       <meta name="twitter:card" content="summary_large_image" />
       {twitterUsername && (
