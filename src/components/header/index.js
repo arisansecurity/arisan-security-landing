@@ -24,14 +24,14 @@ const NavigationOverlay = ({ path, showMenu, setShowMenu }) => {
           <a className={`text-xl ${path === "tentang" ? "text-light-blue px-3 py-2 hover:text-white" : " px-3 py-2"}`} href="/tentang">Tentang</a>
         </div>
         <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
-          <a className="text-xl px-3 py-2" href="#">Blog</a>
+          <a className="text-xl px-3 py-2" href="https://blog.arisansecurity.id">Blog</a>
         </div>
-        <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
+        {/* <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
           <a className="text-xl px-3 py-2" href="#">Forum</a>
-        </div>
-        <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
+        </div> */}
+        {/* <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
           <a className="text-xl px-3 py-2" href="#">E-Learning</a>
-        </div>
+        </div> */}
         <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
           <a className="text-xl px-3 py-2" href="#">Gudang</a>
         </div>
