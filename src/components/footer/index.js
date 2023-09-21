@@ -37,12 +37,12 @@ const Footer = () => {
           </h3>
           <a href="#" className="block text-sm mb-2 text-light-blue">Media Press Kit</a>
           <a href="#" className="block text-sm mb-2 text-light-blue">Kebijakan dan Privasi</a>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Syarat dan Ketentuan</a>
+          <a href="/syarat-dan-ketentuan" className="block text-sm mb-2 text-light-blue">Syarat dan Ketentuan</a>
         </div>
       </div>
       <div className="flex w-full items-center justify-center">
         <div className="rounded-full p-1 bg-blue-400 mx-1">
-          <a href="https://www.facebook.com/ArisanSec/" target={'_blank'}><FaFacebook width={24} /></a>
+          <a href="https://wwsw.facebook.com/ArisanSec/" target={'_blank'}><FaFacebook width={24} /></a>
         </div>
         <div className="rounded-full p-1 bg-blue-400 mx-1">
           <a href="https://instagram.com/arisansecurity.id" target={'_blank'}><FaInstagram width={24} /></a>
