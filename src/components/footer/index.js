@@ -1,5 +1,6 @@
 import * as React from "react"
 import { FaFacebook, FaInstagram, FaTelegram, FaGithub, FaTwitter, FaLinkedin, FaDiscord, FaYoutube } from 'react-icons/fa';
+import ArisanSecurityLogo from "../../images/arisansecurity.png";
 
 
 const Footer = () => {
@@ -7,37 +8,16 @@ const Footer = () => {
     <div className="bg-dark-blue text-white p-8">
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
         <div className="m-4">
-          <h3 className="font-bold text-xl mb-3">
-            Internal
-          </h3>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Kirim Tulisan</a>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Pendaftaran SUKWAN</a>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Pendaftaran DEWAN</a>
+          <img src={ArisanSecurityLogo} className="object-contain h-8 md:h-8" alt="Logo Arisan Security" />
         </div>
         <div className="m-4">
-          <h3 className="font-bold text-xl mb-3">
-            Eksternal
-          </h3>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Publikasi</a>
-          <a href="#" className="block text-sm mb-2">Pendaftaran SUKWAN</a>
-          <a href="#" className="block text-sm mb-2">Pendaftaran DEWAN</a>
+          <a href="#" className="block text-sm mb-2 text-white">Kirim Tulisan</a>
+          <a href="#" className="block text-sm mb-2 text-white">Hubungi Kami</a>
         </div>
         <div className="m-4">
-          <h3 className="font-bold text-xl mb-3">
-            Eksternal
-          </h3>
-          <a href="#" className="block text-sm mb-2">New Normal Life 101</a>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Bocor.in</a>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Sadhéngah Abah</a>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Laporkan Kasus Siber</a>
-        </div>
-        <div className="m-4">
-          <h3 className="font-bold text-xl mb-3">
-            Eksternal
-          </h3>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Media Press Kit</a>
-          <a href="#" className="block text-sm mb-2 text-light-blue">Kebijakan dan Privasi</a>
-          <a href="/syarat-dan-ketentuan" className="block text-sm mb-2 text-light-blue">Syarat dan Ketentuan</a>
+          <a href="#" className="block text-sm mb-2 text-white">Media Press Kit</a>
+          <a href="#" className="block text-sm mb-2 text-white">Kebijakan dan Privasi</a>
+          <a href="/syarat-dan-ketentuan" className="block text-sm mb-2 text-white">Syarat dan Ketentuan</a>
         </div>
       </div>
       <div className="flex w-full items-center justify-center">
