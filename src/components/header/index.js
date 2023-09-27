@@ -3,15 +3,15 @@ import ArisanSecurityLogo from '../../images/arisansecurity.png'
 const NavigationOverlay = ({ path, showMenu, setShowMenu }) => {
   const [showContainer, setShowContainer] = React.useState(false);
   React.useEffect(() => {
-    setTimeout(() => {
+    // setTimeout(() => {
       setShowContainer(true);
-    }, 100)
+    // }, 100)
   }, [])
   const closeContainer = () => {
     setShowContainer(false);
-    setTimeout(() => {
+    // setTimeout(() => {
       setShowMenu(false)
-    }, 100)
+    // }, 100)
   }
 
   return (
@@ -26,12 +26,6 @@ const NavigationOverlay = ({ path, showMenu, setShowMenu }) => {
         <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
           <a className="text-xl px-3 py-2" href="https://blog.arisansecurity.id">Blog</a>
         </div>
-        {/* <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
-          <a className="text-xl px-3 py-2" href="#">Forum</a>
-        </div> */}
-        {/* <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
-          <a className="text-xl px-3 py-2" href="#">E-Learning</a>
-        </div> */}
         <div className="p-2 text-white hover:bg-blue-500 rounded-xl cursor-pointer">
           <a className="text-xl px-3 py-2" href="#">Gudang</a>
         </div>
